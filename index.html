@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L.W.T</title>
+    <link rel="stylesheet" href="/output/output.css" />
+  </head>
+  <body class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-full">
+    <header class="bg-white mb-10 md:mx-60 sm:mx-40 rounded">
+      <nav class="flex justify-between items-center mx-auto py-3 px-5">
+        <div>
+          <h1 class="text-blue-500 text-4xl font-bold">L.W.T</h1>
+        </div>
+        <div
+          class="nav-links md:static md:min-h-fit absolute bg-white min-h-[25vh] left-0 top-[-100%] w-full md:w-auto flex items-center px-5"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[1vw] gap-8"
+          >
+            <li>
+              <a class="hover:text-gray-500" href="#">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">Courses</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">Deals</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">Success</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6">
+          <button
+            class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec]"
+          >
+            Register
+          </button>
+
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu-sharp"
+            class="text-3xl cursor-pointer md:hidden"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+    <div class="carousel w-full h-96 my">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="/img/cover1.jpg" class="w-full md:px-60 sm:px-40 rounded" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide4" class="btn btn-circle md:ml-60 sm:ml-40">❮</a>
+          <a href="#slide2" class="btn btn-circle md:mr-60 sm:mr-40">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="/img/cover2.jpg" class="w-full md:px-60 sm:px-40 rounded" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide1" class="btn btn-circle md:ml-60 sm:ml-40">❮</a>
+          <a href="#slide3" class="btn btn-circle md:mr-60 sm:mr-40">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="/img/cover3.jpg" class="w-full md:px-60 sm:px-40 rounded" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide2" class="btn btn-circle md:ml-60 sm:ml-40">❮</a>
+          <a href="#slide4" class="btn btn-circle md:mr-60 sm:mr-40">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="/img/cover4.jpg" class="w-full md:px-60 sm:px-40 rounded" />
+        <div
+          class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+        >
+          <a href="#slide3" class="btn btn-circle md:ml-60 sm:ml-40">❮</a>
+          <a href="#slide1" class="btn btn-circle md:mr-60 sm:mr-40">❯</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 class="text-4xl text-blue-500 font-bold text-center mt-10">
+        Discover Our Popular Courses
+      </h1>
+      <p class="text-2xl font-semibold text-gray-600 text-center mt-5">
+        learning to code is a valuable investment in your future.
+      </p>
+    </div>
+
+    <div
+      class="grid gap-5 md:grid-cols-2 md:grid-rows-3 mx-60 mt-20 sm:grid-cols-1 sm:grid-rows-6 justify-center"
+    >
+      <div
+        class="card card-side bg-gray-200 border-2 border-blue-500 shadow-xl flex flex-col md:flex-row"
+      >
+        <figure class="">
+          <img class="px-5 py-20" src="/img/js.jpg" />
+        </figure>
+        <div class="card-body sm:items-center">
+          <h2 class="card-title text-blue-500 text-2xl font-bold">
+            JS basic to advance
+          </h2>
+          <p class="text-gray-500 text-center">
+            learning to code is a valuable investment in your future.
+          </p>
+          <div class="card-actions justify-center">
+            <button
+              class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec] text-center text-lg font-semibold"
+            >
+              <a href="#">price:-$20</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card card-side bg-gray-200 border-2 border-blue-500 shadow-xl flex flex-col md:flex-row"
+      >
+        <figure>
+          <img class="px-5 py-20" src="/img/ui-ux.png" />
+        </figure>
+        <div class="card-body sm:items-center">
+          <h2 class="card-title text-2xl font-bold text-blue-500">
+            Learn UI/UX !
+          </h2>
+          <p class="text-gray-500 text-center">
+            learning to code is a valuable investment in your future..
+          </p>
+          <div class="card-actions justify-center">
+            <button
+              class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec] text-center text-xl font-semibold"
+            >
+              <a href="#">price:-25$</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card card-side bg-gray-200 border-2 border-blue-500 shadow-xl flex flex-col md:flex-row"
+      >
+        <figure>
+          <img class="px-5 py-20" src="/img/mg.jpg" />
+        </figure>
+        <div class="card-body sm:items-center">
+          <h2 class="card-title text-2xl font-bold text-blue-500">
+            Learn motion graphics!
+          </h2>
+          <p class="text-gray-500 text-center">
+            learning to code is a valuable investment in your future.
+          </p>
+          <div class="card-actions justify-center">
+            <button
+              class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec] text-center text-xl font-semibold"
+            >
+              <a href="#">price:-40$</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card card-side bg-gray-200 border-2 border-blue-500 shadow-xl flex flex-col md:flex-row"
+      >
+        <figure>
+          <img class="px-5 py-20" src="/img/dm.jpg" />
+        </figure>
+        <div class="card-body sm:items-center">
+          <h2 class="card-title text-2xl font-bold text-blue-500">
+            Be a digital marketar!
+          </h2>
+          <p class="text-gray-500 text-center">
+            learning to code is a valuable investment in your future.
+          </p>
+          <div class="card-actions justify-center">
+            <button
+              class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec] text-center text-xl font-semibold"
+            >
+              <a href="#">price:-30$</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card card-side bg-gray-200 border-2 border-blue-500 shadow-xl flex flex-col md:flex-row"
+      >
+        <figure>
+          <img class="px-5 py-20" src="/img/full-stack.jpeg" />
+        </figure>
+        <div class="card-body sm:items-center">
+          <h2 class="card-title text-2xl font-bold text-blue-500">
+            Learn full stack!
+          </h2>
+          <p class="text-gray-500 text-center">
+            learning to code is a valuable investment in your future.
+          </p>
+          <div class="card-actions justify-center">
+            <button
+              class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec] text-center text-xl font-semibold"
+            >
+              <a href="#">price:-45$</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card card-side bg-gray-200 border-2 border-blue-500 shadow-xl flex flex-col md:flex-row"
+      >
+        <figure>
+          <img class="w-full px-5 py-20" src="/img/photography.jpg" />
+        </figure>
+        <div class="card-body sm:items-center">
+          <h2 class="card-title text-2xl font-bold text-blue-500">
+            Learn photography Rules!
+          </h2>
+          <p class="text-gray-500 text-center">
+            learning to code is a valuable investment in your future.
+          </p>
+          <div class="card-actions justify-center">
+            <button
+              class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec] text-center text-xl font-semibold"
+            >
+              <a href="#">price:-20$</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center mt-10">
+      <button
+        class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec]"
+      >
+        <a href="#">See more</a>
+      </button>
+    </div>
+
+    <div class="">
+      <div
+        class="card lg:card-side bg-gray-200 shadow-xl flex flex-col md:flex-row mx-40 md:mx-60 items-center mt-10 border-2 border-blue-500 drop-shadow-md"
+      >
+        <figure class="">
+          <img src="/img/online.png" />
+        </figure>
+        <div class="card-body items-center justify-center">
+          <h2 class="card-title text-blue-500 text-2xl font-bold md:pt-32">
+            Exploring Online learning!
+          </h2>
+          <p class="text-gray-500 text-center text-xl">
+            Online learning is an effective and convenient method of education
+            that provides individuals with a flexible and accessible way to
+            improve their skills and knowledge. <br />
+            By eliminating geographical and physical barriers, online learning
+            makes quality education available to people all over the world.
+          </p>
+          <div class="pb-32">
+            <div class="flex gap-5 md:mb-5">
+              <div>
+                <h1 class="text-blue-500 text-2xl font-bold">3.2K+</h1>
+                <p class="text-gray-500 text-center">Online Course</p>
+              </div>
+              <div>
+                <h1 class="text-blue-500 text-2xl font-bold">600+</h1>
+                <p class="text-gray-500 text-center">Experts</p>
+              </div>
+              <div>
+                <h1 class="text-blue-500 text-2xl font-bold">1K+</h1>
+                <p class="text-gray-500 text-center">Ratings</p>
+              </div>
+            </div>
+            <div class="card-actions justify-center">
+              <button
+                class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec]"
+              >
+                <a href="#">See more</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-gray-200 mx-40 md:mx-60 mt-10 mb-10 flex flex-col items-center border-2 border-blue-500 rounded-xl pb-5"
+    >
+      <h1 class="text-blue-500 text-4xl font-bold text-center pt-5 pb-5">
+        Welcome to join us
+      </h1>
+      <p class="text-center text-gray-600 text-xl pb-5 px-10">
+        Join the thousands of students who have already discovered the benefits
+        of learning to code with LWT. Start your journey today and see where
+        your skills can take you!
+      </p>
+
+      <button
+        class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec] shadow"
+        id="ragistration-btn"
+      >
+        Ragistration
+      </button>
+
+      <div
+        class="w-full  inset-0 hidden justify-center items-center mt-10"
+        id="overlay"
+      >
+        <div
+          class="w-full bg-[#a6c1ee] max-w-sm py-2 px-3 rounded shadow-xl text-gray-600"
+        >
+          <div class="flex justify-between items-center">
+            <h4 class="text-blue-500 text-2xl font-bold text-center pt-5 pb-2">Welcome to L.W.T</h4>
+            <svg
+              class="h-6 w-6 cursor-pointer p-1 hover:bg-gray-300 rounded-full"
+              id="close-modal"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <div class="mt-2 text-sm">
+            <p class="text-start text-gray-600 text-xl pb-5">Please full fill the requrement's</p>
+          </div>
+
+          <div class="flex flex-col gap-2 items-center justify-center bg-[#a6c1ee]">
+            <form action="#">
+              <div class="user-details ">
+                  <div class="input-box flex flex-row  justify-between mt-2 mb-2 ">
+                      <span class="details "> <h1 class="text-xl mr-2"> First nsme </h1> </span>
+                      <input class="bg-gray-200 rounded-sm py-2 border border-black" type="text" placeholder="Enter your first name" required>
+                  </div>
+                  <div class="input-box flex flex-row justify-between mt-2 mb-2">
+                      <span class="details"><h1 class="text-xl mr-2"> last nsme </h1></span>
+                      <input class="bg-gray-200 rounded-sm py-2 border border-black" type="text" placeholder="Enter your last name" required>
+                  </div>
+                  <div class="input-box flex flex-row justify-between mt-2 mb-2">
+                      <span class="details"><h1 class="text-xl mr-0"> Birth date </h1></span>
+                      <input class="bg-gray-200 rounded-sm py-2 border border-black" type="date"  required>
+                  </div>
+                  <div class="input-box flex flex-row justify-between">
+                      <span class="details"><h1 class="text-xl mr-0"> Email </h1></span>
+                      <input class="bg-gray-200 rounded-sm py-2 border border-black" type="email" placeholder="Enter your email addres" required>
+                  </div>
+                  <div class="input-box flex flex-col justify-between">
+                      <span class="details"><h1 class="text-xl mb-2"> Phone </h1></span>
+                      <input class="bg-gray-200 rounded-sm py-2 border border-black" type="text" placeholder="Enter your phone number" required>
+                  <div class="input-box flex flex-col justify-between">
+                      <span class="details"><h1 class="text-xl mb-2"> Pasword </h1></span>
+                      <input class="bg-gray-200 rounded-sm py-2 border border-black" type="password" placeholder="Enter your password" required>
+                  </div>
+                  <div class="input-box flex flex-col justify-between">
+                      <span class="details"><h1 class="text-xl mb-2"> Confarm Password </h1></span>
+                      <input class="bg-gray-200 rounded-sm py-2 border border-black" type="password" placeholder="Confarm your password" required>
+                  </div>
+                  <div class="button mt-3 flex justify-end space-x-3">
+                    <button  class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec] shadow" type="submit">Submit</button>
+                    <button
+                        class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-[#87acec] shadow" type="reset">
+                        Reset
+                    </button>
+                  </div>
+              </div>
+          </form>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-60 mt-20">
+      <h1 class="text-center text-4xl text-blue-500 font-bold pb-5">
+        Meet Our Successful students
+      </h1>
+      <p class="text-center text-xl text-gray-500 font-semibold pb-5">
+        They are all working different company's all over the world
+      </p>
+      <div
+        class="grid gap-10 md:grid-cols-4 md:grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 justify-center items-center pt-5"
+      >
+        <div
+          class="card-1 bg-gray-200 rounded-xl flex flex-col justify-center items-center shadow-xl"
+        >
+          <img
+            class="h-60 w-full rounded-xl shadow-lg"
+            src="img/lora.jpeg"
+            alt=""
+          />
+          <h1 class="text-blue-500 text-xl font-bold text-center pt-2 pb-2">
+            lora
+          </h1>
+        </div>
+        <div
+          class="card-2 bg-gray-200 rounded-xl flex flex-col justify-center items-center shadow-xl"
+        >
+          <img
+            class="h-60 w-full rounded-xl shadow-lg"
+            src="img/jems.jpg"
+            alt=""
+          />
+          <h1 class="text-blue-500 text-xl font-bold text-center pt-2 pb-2">
+            Jems
+          </h1>
+        </div>
+        <div
+          class="card-3 bg-gray-200 rounded-xl flex flex-col justify-center items-center shadow-xl"
+        >
+          <img
+            class="h-60 w-full rounded-xl shadow-lg"
+            src="img/jushef.jpg"
+            alt=""
+          />
+          <h1 class="text-blue-500 text-xl font-bold text-center pt-2 pb-2">
+            Jushef
+          </h1>
+        </div>
+        <div
+          class="card-4 bg-gray-200 rounded-xl flex flex-col justify-center items-center shadow-xl"
+        >
+          <img
+            class="h-60 w-full rounded-xl shadow-lg"
+            src="img/jon.jpg"
+            alt=""
+          />
+          <h1 class="text-blue-500 text-xl font-bold text-center pt-2 pb-2">
+            Jon
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-40 md:mx-60 pt-10 mb-10">
+      <h1 class="text-blue-500 text-4xl font-bold text-center pt-2 pb-2">
+        Frequently Asked Questions
+      </h1>
+      <p class="text-center text-xl text-gray-500 font-semibold pb-5">
+        Most common question's
+      </p>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border border-base-300 bg-gray-200 rounded-box"
+      >
+        <div class="collapse-title text-xl font-medium">
+          difference between CSS Grid Layout and CSS Flexbox Layout
+        </div>
+        <div class="collapse-content">
+          <p>
+            The basic difference between CSS Grid Layout and CSS Flexbox Layout
+            is that flexbox was designed for layout in one dimension - either a
+            row or a column. Grid was designed for two-dimensional layout -
+            rows, and columns at the same time. The two specifications share
+            some common features
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border border-base-300 bg-gray-200 rounded-box"
+      >
+        <div class="collapse-title text-xl font-medium">
+          What are the differences between bootstrap and tailwind.
+        </div>
+        <div class="collapse-content">
+          <p>
+            Bootstrap is the most popular CSS framework for building responsive,
+            mobile-first projects on the web. Tailwind CSS, on the other hand,
+            is the most popular utility-first CSS framework for fast UI
+            development.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border border-base-300 bg-gray-200 rounded-box"
+      >
+        <div class="collapse-title text-xl font-medium">
+          What is CSS box model.
+        </div>
+        <div class="collapse-content">
+          <p>
+            The CSS box model is a container that contains multiple properties
+            including borders, margin, padding, and the content itself. It is
+            used to create the design and layout of web pages. The web browser
+            renders every element as a rectangular box according to the CSS box
+            model. Box-Model has multiple properties in CSS. Some of them are
+            given below:
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border border-base-300 bg-gray-200 rounded-box"
+      >
+        <div class="collapse-title text-xl font-medium">
+          What are html semantic tags
+        </div>
+        <div class="collapse-content">
+          <p>
+            Semantic HTML or semantic markup is HTML that introduces meaning to
+            the web page rather than just presentation. For example, a p tag
+            indicates that the enclosed text is a paragraph. This is both
+            semantic and presentational. Some semantic tags are header, main,
+            nav, footer, article etc.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-gray-900 flex flex-col items-center pt-10 pb-10">
+      <h1 class="text-blue-500 text-4xl font-bold text-center pt-2 pb-2">
+        L.W.T
+      </h1>
+      <p class="text-center text-xl text-gray-500 font-semibold pb-5">
+        Office 41, Zawaya Buildin, Ghala Muscat, Sultanate of Oman
+      </p>
+
+      <p class="text-center text-xl text-gray-500 font-semibold pb-5">
+        Privacy policy | Terms of use
+      </p>
+
+      <div class="flex flex-row gap-5">
+        <img class="h-16" src="img/facebook-icon.png" alt="" />
+        <img class="h-16" src="img/instagram-icon.png" alt="" />
+        <img class="h-16" src="img/linkedin-icon.png" alt="" />
+        <img class="h-16" src="img/twitter-icon.png" alt="" />
+      </div>
+    </footer>
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="app.js"></script>
+    </script>
+  </body>
+</html>
